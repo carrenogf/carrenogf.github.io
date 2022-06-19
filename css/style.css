@@ -560,7 +560,7 @@ textarea.form-item{
 		width: 300px;
 		height: 300px;
 	}
-	.circulo-rosa .titulo-blanco{
+	.circulo-rosa .titulo{
 		font-size: 2em;
 	}
 	.clientes{
@@ -610,7 +610,7 @@ textarea.form-item{
 	}
 	/****************news******************/
 
-	.container-news .titulo-negro{
+	.container-news .titulo {
 		font-size: 2em;
 	}
 	.article-news{
