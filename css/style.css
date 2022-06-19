@@ -175,13 +175,30 @@ footer{
 	align-items: center;
 	justify-content: center;
 }
+@keyframes efecto-presentacion{
+	0%{background-color: rgb(246,162,190,0.8);}
+	50%{background-color:rgb(255,255,255,0.6);}
+	100%{background-color: rgb(246,162,190,0.8);}
+}
 
+@keyframes efecto-presentacion-text {
+	0%{color: #ffffff;}
+	50%{color: #000000;}
+	100%{color: #ffffff;}	
+}
 .presentacion__content{
 	background-color: rgb(246,162,190,0.8);
 	padding: 30px;
 	overflow: auto;
 	height: 70%;
+	animation: efecto-presentacion 20s infinite ease-in-out ;
 }
+.presentacion__content h2, .presentacion__content p{
+	animation: efecto-presentacion-text 20s infinite ease-in-out ;
+
+}
+
+
 
 /********************servicios*********************/
 .servicios{
@@ -192,11 +209,28 @@ footer{
 	align-items: center;
 	justify-content: center;
 }
+@keyframes efecto-servicios{
+	0%{background-color: rgb(255,255,255,0.6);}
+	50%{background-color:rgb(246,162,190,0.8);}
+	100%{background-color: rgb(255,255,255,0.6);}
+}
+
+@keyframes efecto-servicios-text {
+	0%{color: #000000;}
+	50%{color: #ffffff;}
+	100%{color: #000000;}	
+}
 .servicios__content{
 	background-color: rgb(255,255,255,0.6);
 	height: 70%;
 	padding: 30px;
 	overflow: auto;
+	animation: efecto-servicios 20s infinite linear ;
+
+}
+.servicios__content h2, .servicios__content p{
+	animation: efecto-servicios-text 20s infinite ease-in-out ;
+
 }
 
 /********************descripcion*******************/
