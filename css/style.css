@@ -191,10 +191,10 @@ footer{
 	padding: 30px;
 	overflow: auto;
 	height: 70%;
-	animation: efecto-presentacion 20s infinite ease-in-out ;
+	animation: efecto-presentacion 25s infinite ease-in-out ;
 }
 .presentacion__content h2, .presentacion__content p{
-	animation: efecto-presentacion-text 20s infinite ease-in-out ;
+	animation: efecto-presentacion-text 25s infinite ease-in-out ;
 
 }
 
@@ -225,11 +225,11 @@ footer{
 	height: 70%;
 	padding: 30px;
 	overflow: auto;
-	animation: efecto-servicios 20s infinite linear ;
+	animation: efecto-servicios 25s infinite linear ;
 
 }
 .servicios__content h2, .servicios__content p{
-	animation: efecto-servicios-text 20s infinite ease-in-out ;
+	animation: efecto-servicios-text 25s infinite ease-in-out ;
 
 }
 
