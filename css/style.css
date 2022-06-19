@@ -1,0 +1,603 @@
+/* Reset */
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+/**************************color***************************/
+/*
+main color: #F6A2BE / (246,162,190)
+gris oscuro; #302E2E
+*/
+
+/*************************textos*****************************/
+.t-blanco{
+	font-family: 'Playfair Display', serif;
+	color: #ffffff;
+}
+.t-negro{
+	font-family: 'Playfair Display', serif;
+	color: #000000;
+}
+.titulo{
+	font-family: 'Playfair Display', serif;
+	font-size: 2.5em;
+}
+.texto{
+	font-family: 'Playfair Display', serif;
+	font-size: 1em;
+}
+.texto-grande{
+	font-size: 2em;
+}
+.texto-pequeño{
+	font-size: 0.75em;
+}
+/****************************************************************************************
+			 					/*************************/
+			 					/* 		 header   		 */
+			 					/*************************/
+/*****************************************************************************************/
+#menu-hamb{
+	display: none;
+}
+#menu-hamb-label{
+	display: none;
+}
+header{
+	grid-area: header;
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+	font-family: 'Alex Brush', cursive;
+	font-size: 3vw;
+	padding: 3px;
+}
+.menu{
+	display: grid;
+	grid-template-columns: 20% 80%;
+	justify-items: start;
+	align-items: center;
+}
+.logo{
+	max-width: 100%;
+	padding: 5px;
+	border: #F6A2BE solid 1px;
+}
+.menu nav{
+	width: 100%;
+}
+.menu nav ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.menu nav ul li{
+	list-style: none;
+	padding: 5px;
+}
+.menu nav ul li a{
+	color: #000000;
+	text-decoration: none;
+}
+
+.menu nav ul li a:hover{
+	color: #F6A2BE;
+}
+/****************************************************************************************
+			 					/*************************/
+			 					/* 		  footer  		 */
+			 					/*************************/
+/*****************************************************************************************/
+footer{
+	grid-area: footer;
+	background-image: url("./../assets/Fondo-rosa.png");
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.footer__div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer__container{
+	display: grid;
+	font-family: 'Playfair Display', serif;
+	color: #000000;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(255, 255, 255,0.5);
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+}
+.redes{
+	display: flex;
+	padding: 5px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+.redes__icon{
+	max-width: 80%;
+}
+.enlaces{
+	padding:5px;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	grid-gap: 5px;
+}
+.enlaces__icon{
+	width: 150px;
+	max-height: 55px;
+	border-radius: 5px;
+	border: #F6A2BE solid 1px;
+}
+
+.footer__container ul{
+	text-align: left;
+}
+.width-100{
+	width: 100%;
+}
+
+/****************************************************************************************
+			 					/*************************/
+			 					/* 		  home   		 */
+			 					/*************************/
+/*****************************************************************************************/
+/***********************grid*************************/
+.home {
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"presentacion servicios"
+	"descripcion descripcion"
+	"descripcion-clientes clientes"
+	"footer footer";
+
+	grid-template-rows: 5% 2fr 1fr 2fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+/********************Presentacion********************/
+.presentacion{
+	grid-area: presentacion;
+	background-image: url("./../assets/notebook-g3cb28f56d_1280.jpg");
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.presentacion__content{
+	background-color: rgb(246,162,190,0.8);
+	padding: 30px;
+	overflow: auto;
+	height: 70%;
+}
+
+/********************servicios*********************/
+.servicios{
+	grid-area: servicios;
+	background-image: url("./../assets/glasses-calculator-and-tablet-on-white-neat-desk.jpg");
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.servicios__content{
+	background-color: rgb(255,255,255,0.6);
+	height: 70%;
+	padding: 30px;
+	overflow: auto;
+}
+
+/********************descripcion*******************/
+.descripcion{
+	grid-area: descripcion;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+.descripcion__img{
+	width: 15%;
+	background-size: contain;
+}
+.descripcion__content{
+	height: 90%;
+	width: 37%;
+	text-align: justify;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+
+}
+/*************clientes descripcion*****************/
+.descripcion-clientes{
+	grid-area: descripcion-clientes;
+	background-color: #302E2E;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+
+}
+.circulo-rosa{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 350px;
+	height: 350px;
+	background-image: linear-gradient(to bottom,rgb(246,162,190),#302E2E);
+	overflow: visible;
+	border-radius: 50%;
+}
+/*****************clientes************************/
+.clientes{
+	grid-area: clientes;
+	background-color: #302E2E;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 5px;
+	padding: 7px;
+	align-items: center;
+	justify-items: center;
+
+}
+.clientes div{
+	border: #F6A2BE solid 1px;
+	background-color: #ffffff;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 85% 15%;
+	align-items: center;
+	justify-items: center;
+	border-radius: 5px;
+	padding: 5px;
+}
+.clientes__img{
+	width: 80%;
+}
+.clientes__texto{
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	border-top: #F6A2BE solid;
+
+}
+
+/****************************************************************************************
+			 					/*************************/
+			 					/* 		  about   		 */
+			 					/*************************/
+/*****************************************************************************************/
+.about {
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"about-content about-content"
+	"footer footer";
+
+	grid-template-rows: 60px 3fr 1fr;
+}
+
+.about__content{
+	grid-area: about-content;
+	background-image: url(./../assets/entrepreneur-gfebe8994c_1920.jpg);
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+}
+.about__card{
+	background-color: rgb(255, 255, 255,0.5);
+	display: grid;
+	grid-template-rows: 30% 70%;
+	padding: 30px;
+	margin-left: 5%;
+	margin-right: 5%;
+	overflow: auto;
+}
+/****************************************************************************************
+			 					/*************************/
+			 					/* 		contact  		 */
+			 					/*************************/
+/*****************************************************************************************/
+
+.contact{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"contact-content contact-content"
+	"footer footer";
+	grid-template-rows: 60px 2fr 1fr;
+}
+.contact__content{
+	grid-area: contact-content;
+	background-image: url(./../assets/glasses-calculator-and-tablet-on-white-neat-desk.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact__form{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+	border: #F6A2BE solid;
+	background-color: rgb(255, 255, 255,0.5);
+	border-radius: 5px;
+}
+.form-item{
+	font-size: 1.5rem;
+	width: 80%;
+	background-color: rgb(246,162,190,0.3);
+	border: #F6A2BE solid 1px;
+}
+textarea.form-item{
+	height: 200px;
+	font-size: 1rem;
+}
+
+/****************************************************************************************
+			 					/*************************/
+			 					/* 	     services 		 */
+			 					/*************************/
+/*****************************************************************************************/
+.services{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"services-content services-content"
+	"footer footer";
+	grid-template-rows: 60px 2fr 1fr;
+}
+.services__content{
+	grid-area: services-content;
+	background-image: url(./../assets/laptop-gad913608c_1920.jpg);
+	background-size: cover;
+	display: flex;
+	padding: 10px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container-cards{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+}
+.card-services{
+	height: 80%;
+	width: 30%;
+	background-color: rgb(255, 255, 255,0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+}
+
+.card-services:hover{
+	background-color: rgb(246,162,190,0.5);
+}
+
+/****************************************************************************************
+			 					/*************************/
+			 					/* 	      news  		 */
+			 					/*************************/
+/*****************************************************************************************/
+
+.news{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"news-content news-content"
+	"footer footer";
+
+}
+.news__content{
+	grid-area: news-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container-news{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+
+}
+.article-news{
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-column-gap: 20px;
+	border-top: rgb(246,162,190) solid 1px;
+	border-radius: 5px;
+	padding: 5px;
+	align-items: center;
+}
+.article-news:hover{
+	background-color: rgb(246,162,190,0.25);
+}
+.img-news{
+	width: 100%;
+	border-radius: 5px;
+}
+.text-news{
+	overflow: auto;
+	padding: 5px;
+}
+
+/****************************************************************************************
+			 					/*************************/
+			 					/* 	   		movil		 */
+			 					/*************************/
+/*****************************************************************************************/
+@media (max-width: 600px) {
+	/*******************Menu*********************/
+	.menu__ul li{
+		display: none;
+	}
+	.menu{
+		display: grid;
+		grid-template-columns: 40% 60%;
+	}
+	#menu-hamb-label{
+		display: block;
+		text-align: right;
+		padding-right: 10px;
+		font-size: 35px;
+		user-select: none;
+	}
+	input:checked  ~ .menu__ul li {
+  		display: flex;
+  		border: solid 0.5px;
+  		width: 100%;
+		}
+	input:checked  ~ .menu__ul li a {
+  		width: 100%;
+		}
+	input:checked  ~ .menu__ul {
+		display: flex;
+  		flex-direction: column;
+  		justify-content: start;
+  		position: absolute;
+  		z-index: 100;
+  		background-color: #ffffff;
+  		right: 0;
+  		font-size: 30px;
+		}
+	/*****************footer*******************/
+	footer{
+		grid-area: footer;
+		background-image: url("./../assets/Fondo-rosa.png");
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+	}
+	/*****************Home***********************/
+	.home{
+		display: grid;
+		grid-template-areas:
+		"header"
+		"presentacion"
+		"servicios"
+		"descripcion"
+		"descripcion-clientes"
+		"clientes"
+		"footer";
+		grid-template-rows: 50px 1fr 1fr;
+		grid-template-columns: 1fr;
+	}
+	.presentacion__content{
+		padding: 5px;
+		height: 280px;
+	}
+	.servicios__content{
+		padding: 5px;
+		height: 280px;
+	}
+	.descripcion{
+  		padding: 5px;
+  	}
+  	.descripcion__img{
+  		width: 20%;
+  	}
+  	.descripcion__content{
+  		width: 80%;
+  	}
+	.circulo-rosa{
+		width: 300px;
+		height: 300px;
+	}
+	.circulo-rosa .titulo-blanco{
+		font-size: 2em;
+	}
+	.clientes{
+		grid-area: clientes;
+		background-color: #302E2E;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+	.clientes div{
+		width: 100%;
+	}
+	.clientes__img{
+		width: 90%;
+	}
+
+	/**************services*************/
+	.services{
+		display: grid;
+		grid-template-areas:
+		"header"
+		"services-content"
+		"footer";
+		grid-template-rows: 50px 1fr 1fr;
+	}
+	.services-content{
+		padding: 5px;
+	}
+	.container-cards{
+		flex-direction: column;
+		align-items: center;
+	}
+	.card-services{
+		width: 90%;
+	}
+	/**************about*******************/
+	.about__content{
+		height: 850px;
+	}
+	.about{
+		grid-template-rows: 50px;
+	}
+	.about__card{
+		padding: 5px;
+		height: 90%;
+		grid-template-rows: 10% 90%;
+	}
+	/****************news******************/
+
+	.container-news .titulo-negro{
+		font-size: 2em;
+	}
+	.article-news{
+		grid-template-columns: 100%;
+		align-items: center;
+	}
+	/***************contact****************/
+	.contact{
+		grid-template-rows: 50px;
+	}
+	.contact__form{
+	width: 90%;
+	margin: 5px;
+	}
+	.form-item{
+		font-size: 1.5rem;
+		width: 90%;
+		background-color: rgb(246,162,190,0.3);
+		border: #F6A2BE solid 1px;
+	}
+	textarea.form-item{
+		height: 300px;
+	}
+}
