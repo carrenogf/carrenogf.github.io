@@ -45,9 +45,6 @@ gris oscuro; #302E2E
 	display: none;
 }
 header{
-	grid-area: header;
-	display: flex;
-	align-items: center;
 	background-color: #ffffff;
 	font-family: 'Alex Brush', cursive;
 	font-size: 3vw;
@@ -72,6 +69,7 @@ header{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
+	margin: 0;
 }
 .menu nav ul li{
 	list-style: none;
@@ -353,35 +351,15 @@ textarea.form-item{
 			 					/* 	     services 		 */
 			 					/*************************/
 /*****************************************************************************************/
-.services{
-	display: grid;
-	grid-template-areas:
-	"header header"
-	"services-content services-content"
-	"footer footer";
-	grid-template-rows: 60px 2fr 1fr;
-}
+
 .services__content{
-	grid-area: services-content;
 	background-image: url(./../assets/laptop-gad913608c_1920.jpg);
 	background-size: cover;
-	display: flex;
-	padding: 10px;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
-.container-cards{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	width: 100%;
-	height: 100%;
-}
+
 .card-services{
-	height: 80%;
-	width: 30%;
+	padding-top: 35%;
+	padding-bottom: 35%;
 	background-color: rgb(255, 255, 255,0.5);
 	display: flex;
 	align-items: center;
