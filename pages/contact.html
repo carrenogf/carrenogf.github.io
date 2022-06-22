@@ -7,8 +7,11 @@
   <title>Macarena Fucilieri</title>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body class="container-fluid">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <header>
     <div class="menu">
       <img class="logo" src="./../assets/logo.png" alt="">
@@ -26,12 +29,13 @@
     </div>
   </header>
   <section class="contact__content">
-    <form class="contact__form">
+    <form class="form contact__form">
         <h1 class="titulo t-negro">Contacto</h1>
-        <input class="form-item" type="text" name="nombre" placeholder="Nombre y Apellido">
-        <input class="form-item" type="email" placeholder="Email">
-        <textarea class="form-item" type="textarea" name="nombre" placeholder="Consulta"></textarea>
-        <input class="form-item" type="submit" value="enviar">
+        <input class="form-control form-item" type="text" name="nombre" placeholder="Nombre y Apellido">
+        <input class="form-control form-item" type="email" placeholder="Email">
+        <textarea class="form-control form-item" type="textarea" name="nombre" placeholder="Consulta"></textarea>
+        <br>
+        <input class="btn btn-dark form-item" type="submit" value="enviar">
     </form>
   </section>
   <footer>

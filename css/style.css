@@ -299,24 +299,17 @@ footer{
 			 					/* 		contact  		 */
 			 					/*************************/
 /*****************************************************************************************/
-.contact{
-	display: grid;
-	grid-template-areas:
-	"header header"
-	"contact-content contact-content"
-	"footer footer";
-	grid-template-rows: 60px 2fr 1fr;
-}
+
 .contact__content{
-	grid-area: contact-content;
 	background-image: url(./../assets/glasses-calculator-and-tablet-on-white-neat-desk.jpg);
 	background-size: cover;
+	height: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .contact__form{
-	width: 50%;
+	width: 60%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -326,14 +319,10 @@ footer{
 	border-radius: 5px;
 }
 .form-item{
-	font-size: 1.5rem;
 	width: 80%;
-	background-color: rgb(246,162,190,0.3);
-	border: #F6A2BE solid 1px;
 }
 textarea.form-item{
 	height: 200px;
-	font-size: 1rem;
 }
 
 /****************************************************************************************
