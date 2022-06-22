@@ -50,37 +50,32 @@ header{
 	font-size: 3vw;
 	padding: 3px;
 }
-.menu{
-	display: grid;
-	grid-template-columns: 20% 80%;
-	justify-items: start;
-	align-items: center;
-}
+
 .logo{
 	max-width: 100%;
 	padding: 5px;
 	border: #F6A2BE solid 1px;
 }
-.menu nav{
+nav{
 	width: 100%;
 }
-.menu nav ul{
+nav ul{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 	margin: 0;
 }
-.menu nav ul li{
+nav ul li{
 	list-style: none;
 	padding: 5px;
 }
-.menu nav ul li a{
+nav ul li a{
 	color: #000000;
 	text-decoration: none;
 }
 
-.menu nav ul li a:hover{
+nav ul li a:hover{
 	color: #F6A2BE;
 }
 /****************************************************************************************
@@ -309,7 +304,6 @@ footer{
 	align-items: center;
 }
 .contact__form{
-	width: 60%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -358,25 +352,15 @@ textarea.form-item{
 /*****************************************************************************************/
 
 .news__content{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding-bottom: 50px;
 }
 .container-news{
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 100%;
 	padding: 10px;
 }
 .article-news{
-	display: grid;
-	grid-template-columns: 20% 80%;
-	grid-column-gap: 20px;
 	border-top: rgb(246,162,190) solid 1px;
 	border-radius: 5px;
 	padding: 5px;
-	align-items: center;
 }
 .article-news:hover{
 	background-color: rgb(246,162,190,0.25);
@@ -395,7 +379,7 @@ textarea.form-item{
 			 					/* 	   		movil		 */
 			 					/*************************/
 /*****************************************************************************************/
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	/*******************Menu*********************/
 	.menu nav ul, .menu__ul li{
 		display: none;
@@ -464,42 +448,12 @@ textarea.form-item{
 	.clientes__img{
 		width: 90%;
 	}
-	/**************services*************/
-	.services-content{
-		padding: 5px;
-	}
 	/**************about*******************/
 	.about__content{
 		height: 100%;
 	}
-	.about__card{
+	.about__card{ 
 		padding: 5px;
 		height: 90%;
-	}
-	/****************news******************/
-
-	.container-news .titulo {
-		font-size: 2em;
-	}
-	.article-news{
-		grid-template-columns: 100%;
-		align-items: center;
-	}
-	/***************contact****************/
-	.contact{
-		grid-template-rows: 50px;
-	}
-	.contact__form{
-	width: 90%;
-	margin: 5px;
-	}
-	.form-item{
-		font-size: 1.5rem;
-		width: 90%;
-		background-color: rgb(246,162,190,0.3);
-		border: #F6A2BE solid 1px;
-	}
-	textarea.form-item{
-		height: 300px;
 	}
 }

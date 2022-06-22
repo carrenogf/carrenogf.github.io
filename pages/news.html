@@ -7,57 +7,80 @@
   <title>Macarena Fucilieri</title>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body class="container-fluid">
-  <header>
-    <div class="menu">
-      <img class="logo" src="./../assets/logo.png" alt="">
-      <nav>
-        <input type="checkbox" id="menu-hamb">
-        <label id="menu-hamb-label" for="menu-hamb"> ☰ </label>
-        <ul class="menu__ul">
-          <li><a href="./../index.html">Inicio</a></li>
-          <li><a href="./../pages/services.html">Servicios</a></li>
-          <li><a href="./../pages/about.html">Quien soy</a></li>
-          <li><a href="./../pages/news.html">Publicaciones</a></li>
-          <li><a href="./../pages/contact.html">Contacto</a></li>
-        </ul>
-      </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <header class="container-fluid">
+    <div class="row d-flex align-items-center">
+      <div class="col-md-3 col-5">
+        <img class="logo" src="./../assets/logo.png" alt="">
+      </div>
+      <div class="col-md-9 col-7">
+        <nav>
+          <input type="checkbox" id="menu-hamb">
+          <label id="menu-hamb-label" for="menu-hamb"> ☰ </label>
+          <ul class="menu__ul">
+            <li><a href="./../index.html">Inicio</a></li>
+            <li><a href="./../pages/services.html">Servicios</a></li>
+            <li><a href="./../pages/about.html">Quien soy</a></li>
+            <li><a href="./../pages/news.html">Publicaciones</a></li>
+            <li><a href="./../pages/contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <section class="news__content">
-    <div class="container-news">
+    <div class="container-fluid">
       <h1 class="titulo t-negro">Últimas Publicaciones</h1>
-      <div class="article-news">
-        <img class="img-news" src="./../assets/news/bookkeeping-gf3faee4cc_640.jpg">
-        <div class="text-news">
+      <div class="row article-news">
+        <div class="col-md-3 col-12 d-flex align-items-center">
+          <img class="img-news" src="./../assets/news/bookkeeping-gf3faee4cc_640.jpg">
+        </div>
+        <div class="col-md-9 col-12">
+          <div class="text-news">
           <h4 class="texto-grande t-negro">Nuevo régimen de contribuciones municipales</h4>
           <p class="texto t-negro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <a href="#">ver mas...</a></p>
-        </div> 
+          </div> 
+        </div>
       </div>
 
-      <div class="article-news">
-        <img class="img-news" src="./../assets/news/credit-squeeze-gce83bf83a_640.jpg">
-        <div class="text-news">
-          <h4 class="texto-grande t-negro">Tabla de minimos imponibles de impuestos nacionales</h4>
-          <p class="texto t-negro">Lorem ipssum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <a href="#">ver mas...</a></p>  
-        </div> 
+      <div class="row article-news">
+        <div class="col-md-3 col-12 d-flex align-items-center">
+          <img class="img-news" src="./../assets/news/credit-squeeze-gce83bf83a_640.jpg">
+        </div>
+        <div class="col-md-9 col-12">
+          <div class="text-news">
+            <h4 class="texto-grande t-negro">Tabla de minimos imponibles de impuestos nacionales</h4>
+            <p class="texto t-negro">Lorem ipssum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <a href="#">ver mas...</a></p>  
+          </div> 
+        </div>
       </div>
 
-      <div class="article-news">
-        <img class="img-news" src="./../assets/news/taxes-g3efd3375d_640.jpg">
-        <div class="text-news">
-          <h4 class="texto-grande t-negro">El regimen de información para la venta granos</h4>
-          <p class="texto t-negro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <a href="#">ver mas...</a></p>   
-        </div> 
+      <div class="row article-news">
+        <div class="col-md-3 col-12 d-flex align-items-center">
+          <img class="img-news" src="./../assets/news/taxes-g3efd3375d_640.jpg">
+        </div>
+        <div class="col-md-9 col-12">
+          <div class="text-news">
+            <h4 class="texto-grande t-negro">El regimen de información para la venta granos</h4>
+            <p class="texto t-negro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <a href="#">ver mas...</a></p>   
+          </div> 
+        </div>
       </div>
 
-      <div class="article-news">
-        <img class="img-news" src="./../assets/news/tax-g1ebae6d39_640.jpg">
-        <div class="text-news">
-          <h4 class="texto-grande t-negro">Actualización de categorías de Autónomos</h4>
-          <p class="texto t-negro">Lorem ipssum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <a href="#">ver mas...</a></p>
-        </div> 
+      <div class="row article-news">
+        <div class="col-md-3 col-12 d-flex align-items-center">
+          <img class="img-news" src="./../assets/news/tax-g1ebae6d39_640.jpg">
+        </div>
+        <div class="col-md-9 col-12">
+          <div class="text-news">
+            <h4 class="texto-grande t-negro">Actualización de categorías de Autónomos</h4>
+            <p class="texto t-negro">Lorem ipssum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim vum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <a href="#">ver mas...</a></p>
+          </div> 
+        </div>
       </div>
 
     </div>
