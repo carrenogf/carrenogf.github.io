@@ -1,0 +1,47 @@
+footer{
+	background-image: url("./../assets/footer_blanco.png");
+    .footer__container{
+        display: grid;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .redes{
+        display: flex;
+        padding: 5px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        .redes__icon{
+            max-width: 80%;
+        }
+    }
+    .enlaces{
+        padding:5px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 5px;
+        .enlaces__icon{
+            width: 150px;
+            max-height: 55px;
+            border-radius: 5px;
+            border: $base-color solid 1px;
+        }
+    }
+}
+
+
+
+
+
+
+
+

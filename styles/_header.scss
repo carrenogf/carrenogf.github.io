@@ -1,0 +1,38 @@
+header{
+	background-color: $bg-white;
+	font-family: 'Alex Brush', cursive;
+	font-size: 2vw;
+	padding: 3px;
+}
+#menu-hamb{
+	display: none;
+}
+#menu-hamb-label{
+	display: none;
+}
+.logo{
+	max-width: 100%;
+	padding: 5px;
+	border: $base-color solid 1px;
+}
+nav{
+	width: 100%;
+    ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        li{
+            list-style: none;
+            padding: 5px;
+            a{
+                color: #000000;
+                text-decoration: none;
+            }
+            a:hover{
+                color: $base-color;
+            }
+        }
+    }
+}

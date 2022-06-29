@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Macarena Fucilieri</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lora:ital@1&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   
 </head>
@@ -37,31 +38,29 @@
     <div class="row">
       <div class="col-md-6 col-12 presentacion">
         <div class="presentacion__content">
-          <h2 class="titulo t-blanco">Una Profesional a tu servicio</h2>
+          <h2 class="h2 text-light animate__animated animate__fadeInLeft">Una Profesional a tu servicio</h2>
           <br>
-          <p class="texto t-blanco">Te ofrezco las mejores prácticas y soluciones para tu negocio o futuro emprendimiento, pongo
+          <p class="text-light animate__animated animate__fadeInLeft">Te ofrezco las mejores prácticas y soluciones para tu negocio o futuro emprendimiento, pongo
             todos mis esfuerzos en brindar un valor agregado a mis clientes y lograr que se puedan enfocar en lo que más les gusta y apasiona, su proyecto!
           </p>
         </div>
       </div>
       <div class="col-md-6 col-12 servicios">
         <div class="servicios__content">
-            <h2 class="titulo t-negro">¿Que hago?</h2>
+            <h2 class="h2 text-black animate__animated animate__fadeInRight">¿Que hago?</h2>
             <br>
-            <p class="texto t-negro">Soy una jóven Contadora, dedicada y enfocada en brindar lo mejor para hacer crecer a quien	
+            <p class="text-black animate__animated animate__fadeInRight">Soy una jóven Contadora, dedicada y enfocada en brindar lo mejor para hacer crecer a quien	
               decida trabajar conmigo, de mi podes esperar, además de profesionalidad, un buen trato, paciencia, soporte y 
               eficiencia para solucionar tus problemas de indole contable, impositiva o empresarial. </p>
         </div>
       </div>
     </div>
-
   </div>
-
   <div class="descripcion container-fluid">
-    <img class="descripcion__img" src="./assets/Diploma.png">
-    <div class="descripcion__content">
-      <h2 class="texto t-negro">Contrata a un Profesional Matriculado</h2>
-      <p class="texto-pequeño t-negro">Te aseguras de contar con alguien con conocimientos actualizados y cuya actividad está regulada por la ley. Yo cuento con matricula activa en el Colegio de Graduados en Ciencias Económicas, ¡di <strong>NO</strong> al ejercicio ilegal de la Profesión!
+    <img class="descripcion__img animate__animated animate__fadeInLeft" src="./assets/Diploma.png">
+    <div class="descripcion__content animate__animated animate__fadeInRight">
+      <h6 class="h4">Contrata a un Profesional Matriculado</h6>
+      <p class="text-black">Te aseguras de contar con alguien con conocimientos actualizados y cuya actividad está regulada por la ley. Yo cuento con matricula activa en el Colegio de Graduados en Ciencias Económicas, ¡di <strong>NO</strong> al ejercicio ilegal de la Profesión!
       </p>
     </div>
   </div>
@@ -69,12 +68,12 @@
     <div class="row">
       <div class="descripcion-clientes col-md-6 col-12">
         <span class="circulo-rosa">
-          <h3 class="titulo t-blanco width-100">Ellos decidieron trabajar conmigo!</h3>
+          <h2 class="text-light">Ellos decidieron trabajar conmigo!</h2>
         </span>
       </div>
       <div class="clientes col-md-6 col-12">
         <div>
-          <img class="clientes__img" src="./assets/clientes/cliente (1).png">
+          <img class="clientes__img animate__fadeInUp" src="./assets/clientes/cliente (1).png">
           <p class="clientes__texto">Gutierrez - Odontología</p>
         </div>
         <div>
@@ -106,7 +105,7 @@
       <div class="row">
         <div class="col-md-4 col-12">
           <div class="footer__container">
-            <h4>Puedes seguirme en las redes!</h4>
+            <strong>Puedes seguirme en las redes!</strong>
             <div class="redes">
                 <a target="_blank" href="https://www.facebook.com"><img class="redes__icon" src="./assets/redes/social_media_facebook_fb_icon.png"></a>
                 <a target="_blank" href="https://www.instagram.com"><img class="redes__icon" src="./assets/redes/social_media_instagram_ig_icon.png"></a>
@@ -118,7 +117,7 @@
         </div>
         <div class="col-md-4 col-12">
           <div class="footer__container">
-              <h4>Enlaces de Interés</h4>
+              <strong>Enlaces de Interés</strong>
               <div class="enlaces">
               <a href="http://www.afip.gob.ar/" target="_blank"><img class="enlaces__icon" src="./assets/enlaces/afip.png"></a>
               <a href="http://www.anses.gob.ar/" target="_blank"><img class="enlaces__icon" src="./assets/enlaces/anses.png"></a>
@@ -131,13 +130,11 @@
         </div>
         <div class="col-md-4 col-12">
           <div class="footer__container">
-            <h4>Servicios</h4>
+            <strong>Servicios</strong>
             <ul class="list-group">
-              <li class="list-group-item texto text-center">Contabilidad</li>
-              <li class="list-group-item texto text-center">Impuestos</li>
-              <li class="list-group-item texto text-center">Finanzas</li>
-              <li class="list-group-item texto text-center">Societario</li>
-              <li class="list-group-item texto text-center">Certificaciones</li>
+              <li class="list-group-item texto text-center"><a class="text-decoration-none" href="./pages/services.html">Contabilidad</a></li>
+              <li class="list-group-item texto text-center"><a class="text-decoration-none" href="./pages/services.html">Impuestos</a></li>
+              <li class="list-group-item texto text-center"><a class="text-decoration-none" href="./pages/services.html">Empresa</a></li>
             </ul>
           </div>
         </div>

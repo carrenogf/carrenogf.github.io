@@ -1,0 +1,105 @@
+/********************Presentacion********************/
+.presentacion{
+	background-image: url("./../assets/notebook-g3cb28f56d_1280.jpg");
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    .presentacion__content{
+        background-color: rgba($secondary-color,0.98);
+        padding: 30px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        overflow: auto;
+        height: 80%;
+    }
+}
+
+/********************servicios*********************/
+.servicios{
+	grid-area: servicios;
+	background-image: url("./../assets/glasses-calculator-and-tablet-on-white-neat-desk.jpg");
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    .servicios__content{
+        background-color: rgba($bg-white,0.98);
+        margin-top: 10%;
+        margin-bottom: 10%;
+        height: 80%;
+        padding: 30px;
+        overflow: auto;
+    }
+}
+
+/********************descripcion*******************/
+.descripcion{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+    .descripcion__img{
+        width: 15%;
+        background-size: contain;
+    }
+    .descripcion__content{
+        height: 90%;
+        width: 37%;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+}
+/*************clientes descripcion*****************/
+.descripcion-clientes{
+	background-color: $secondary-color;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+    .circulo-rosa{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 350px;
+        height: 350px;
+        background-image: linear-gradient(to bottom,$base-color,$secondary-color);
+        overflow: visible;
+        border-radius: 50%;
+    }
+}
+
+/*****************clientes************************/
+.clientes{
+	background-color: $secondary-color;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 5px;
+	padding: 7px;
+	align-items: center;
+	justify-items: center;
+    div{
+        border: $base-color solid 1px;
+        background-color: $bg-white;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 85% 15%;
+        align-items: center;
+        justify-items: center;
+        border-radius: 5px;
+        padding: 5px;
+        .clientes__img{
+            width: 80%;
+        }
+        .clientes__texto{
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            border-top: $base-color solid;
+        }
+    }
+}

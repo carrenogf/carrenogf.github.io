@@ -1,0 +1,15 @@
+.about__content{
+	background-image: url(./../assets/entrepreneur-gfebe8994c_1920.jpg);
+	background-size: 100%;
+	background-color: $secondary-color;
+	background-repeat: no-repeat;
+	height: 500px;
+	display: flex;
+	align-items: center;
+    .about__card{
+        background-color: rgba($secondary-color,0.95);
+        background-size: 100%;
+        padding: 30px;
+        overflow: auto;
+    }
+}
