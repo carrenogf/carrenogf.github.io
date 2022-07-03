@@ -11,25 +11,25 @@
 		font-size: 35px;
 		user-select: none;
 	}
-	input:checked  ~ .menu__ul li {
-  		display: flex;
-  		border: solid 0.5px;
-  		width: 100%;
-		}
-	input:checked  ~ .menu__ul li a {
-  		width: 100%;
-		}
-	input:checked  ~ .menu__ul {
+	input:checked  ~ .menu__ul{
 		display: flex;
-  		flex-direction: column;
-  		justify-content: start;
-  		position: absolute;
-  		z-index: 100;
-  		background-color: $bg-white;
-  		right: 0;
-  		font-size: 30px;
-		padding: 0;
-		}
+		flex-direction: column;
+		justify-content: start;
+		position: absolute;
+		z-index: 100;
+		background-color: $bg-white;
+		right: 0;
+		font-size: 30px;
+	  	padding: 0;
+		li {
+			display: flex;
+			border: solid 0.5px;
+			width: 100%;
+			a {
+				width: 100%;
+			  }
+		  }
+	} 
 	/*****************Home***********************/
 	.presentacion__content{
 		height: 100%;

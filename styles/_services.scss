@@ -8,9 +8,7 @@
                 padding-bottom: 35%;
                 background-color: rgba($bg-white,0.5);
                 width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @extend %flex_center;
                 border-radius: 5px;
                 font-family:'Alex Brush', cursive;
             }

@@ -1,0 +1,71 @@
+Sumé el SEO con las siguientes características en mi sitio:
+
+
+En el archivo index.html
+
+Descripción:
+Mediante la etiqueta meta name description, agregué el siguiente párrafo:
+"Contadora Macarena Fucilieri, asesoramiento impositivo y contable, haz crecer tu negocio con el mejor acompañamiento profesional, si quieres saber más, ingresá aquí!."
+Palabras Clave: 
+Mediante la etiqueta meta name keywords, agregué las palabras clave: 
+"estudio contable, impuestos, contabilidad, afip, asesoramiento, contador, contadora, novedades fiscales"
+Encabezado: 
+Para el encabezado del h1 utilicé el texto: "Macarena Fucilieri"
+Titulo: 
+Mediante la etiqueta title agregué el titulo: "Macarena Fucilieri - Inicio"
+
+
+En el archivo about.html
+
+Descripción:
+Mediante la etiqueta meta name description, agregué el siguiente párrafo:
+"Sobre mí, una breve descripción de quien soy, mi carrera profesional a que me dedico y que es lo que puedo ofrecerte, ingresa aquí!."
+Palabras Clave:
+Mediante la etiqueta meta name keywords, agregué las palabras clave: 
+"estudio contable, impuestos, contabilidad, afip, asesoramiento, contador, contadora, novedades fiscales"
+Encabezado: 
+Para el encabezado del h1 utilicé el texto: "Sobre mí"
+Titulo: 
+Mediante la etiqueta title agregué el titulo: "Macarena Fucilieri - Sobre mí"
+
+
+En el archivo contact.html
+
+Descripción:
+Mediante la etiqueta meta name description, agregué el siguiente párrafo:
+"Contactame desde aquí, para tener el mejor asesoramiento y acompañamiento para tu proyecto, te ayudo desde la constitución y durante toda la vida empresarial."
+Palabras Clave:
+Mediante la etiqueta meta name keywords, agregué las palabras clave: 
+"estudio contable, impuestos, contabilidad, afip, asesoramiento, contador, contadora, novedades fiscales"
+Encabezado: 
+Para el encabezado del h1 utilicé el texto "Contacto"
+Titulo: 
+Mediante la etiqueta title agregué el titulo: "Macarena Fucilieri - Contacto"
+
+
+En el archivo news.html
+
+Descripción:
+Mediante la etiqueta meta name description, agregué el siguiente párrafo:
+"Aquí encontrarás las últimas novedades impositivas y contables de Argentina, además de contenido útil para tu empresa."
+Palabras Clave:
+Mediante la etiqueta meta name keywords, agregué las palabras clave: 
+"estudio contable, impuestos, contabilidad, afip, asesoramiento, contador, contadora, novedades fiscales"
+Encabezado: 
+Para el encabezado del h1 utilicé el texto "Últimas Publicaciones"
+Titulo: 
+Mediante la etiqueta title agregué el titulo: "Macarena Fucilieri - Publicaciones"
+
+
+En el archivo services.html
+
+Descripción:
+Mediante la etiqueta meta name description, agregué el siguiente párrafo:
+"Servicios profesionales de primera linea para mejorar tu emprendimiento, puedo asesorarte en temas de impuestos, contabilidad o empresariales."
+Palabras Clave:
+Mediante la etiqueta meta name keywords, agregué las palabras clave: 
+"estudio contable, impuestos, contabilidad, afip, asesoramiento, contador, contadora, novedades fiscales"
+Encabezado: 
+Para el encabezado del h1 utilicé el texto "Servicios"
+Titulo: 
+Mediante la etiqueta title agregué el titulo: "Macarena Fucilieri - Servicios"

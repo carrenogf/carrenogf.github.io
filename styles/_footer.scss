@@ -11,12 +11,10 @@ footer{
         border-radius: 5px;
     }
     .redes{
-        display: flex;
+        @extend %flex_center;
         padding: 5px;
         flex-direction: row;
         flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
         .redes__icon{
             max-width: 80%;
         }

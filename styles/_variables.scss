@@ -1,3 +1,29 @@
 $base-color:rgb(246,162,190);
 $secondary-color:rgb(48,46,46);
-$bg-white:#ffffff
+$bg-white:#ffffff;
+/* MAP */
+$bgimg-home: (
+    presentacion: url("./../assets/notebook-g3cb28f56d_1280.jpg"),
+    servicios:url("./../assets/glasses-calculator-and-tablet-on-white-neat-desk.jpg"),    
+    );
+
+/* extend */
+%flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* mixin */
+@mixin home-first-content($presentacion: false,$servicios: false) {
+    @if $presentacion{
+        background-color: rgba($secondary-color,0.98);
+    }
+    @if $servicios {
+        background-color: rgba($bg-white,0.98);
+    }
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 80%;
+    padding: 30px;
+    overflow: auto;
+}

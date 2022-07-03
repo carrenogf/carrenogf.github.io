@@ -1,43 +1,24 @@
 /********************Presentacion********************/
 .presentacion{
-	background-image: url("./../assets/notebook-g3cb28f56d_1280.jpg");
+	background-image: map-get($bgimg-home,presentacion);
 	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    @extend %flex_center;
     .presentacion__content{
-        background-color: rgba($secondary-color,0.98);
-        padding: 30px;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        overflow: auto;
-        height: 80%;
+        @include home-first-content($presentacion:true)
     }
 }
-
 /********************servicios*********************/
 .servicios{
-	grid-area: servicios;
-	background-image: url("./../assets/glasses-calculator-and-tablet-on-white-neat-desk.jpg");
+	background-image: map-get($bgimg-home,servicios);
 	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@extend %flex_center;
     .servicios__content{
-        background-color: rgba($bg-white,0.98);
-        margin-top: 10%;
-        margin-bottom: 10%;
-        height: 80%;
-        padding: 30px;
-        overflow: auto;
+        @include home-first-content($servicios:true)
     }
 }
-
 /********************descripcion*******************/
 .descripcion{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@extend %flex_center;
 	padding: 10px;
     .descripcion__img{
         width: 15%;
@@ -61,8 +42,7 @@
 	align-items: center;
 	justify-content: center;
     .circulo-rosa{
-        display: flex;
-        align-items: center;
+        @extend %flex_center;
         text-align: center;
         width: 350px;
         height: 350px;
