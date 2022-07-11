@@ -19,6 +19,7 @@
 /********************descripcion*******************/
 .descripcion{
 	@extend %flex_center;
+    flex-direction: row;
 	padding: 10px;
     .descripcion__img{
         width: 15%;
@@ -26,19 +27,22 @@
     }
     .descripcion__content{
         height: 90%;
-        width: 37%;
+        width: 50%;
         text-align: justify;
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: center;
+        h6{
+            text-align: left;
+        }
     }
 }
 /*************clientes descripcion*****************/
 .descripcion-clientes{
 	background-color: $secondary-color;
 	display: flex;
-	width: 100%;
+	
 	align-items: center;
 	justify-content: center;
     .circulo-rosa{

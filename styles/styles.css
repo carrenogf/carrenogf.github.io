@@ -131,6 +131,7 @@ footer .enlaces .enlaces__icon {
 
 /********************descripcion*******************/
 .descripcion {
+  flex-direction: row;
   padding: 10px;
 }
 .descripcion .descripcion__img {
@@ -139,19 +140,21 @@ footer .enlaces .enlaces__icon {
 }
 .descripcion .descripcion__content {
   height: 90%;
-  width: 37%;
+  width: 50%;
   text-align: justify;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
 }
+.descripcion .descripcion__content h6 {
+  text-align: left;
+}
 
 /*************clientes descripcion*****************/
 .descripcion-clientes {
   background-color: rgb(48, 46, 46);
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -304,28 +307,31 @@ footer .enlaces .enlaces__icon {
     width: 100%;
   }
   /*****************Home***********************/
-  .presentacion__content {
-    height: 100%;
-  }
-  .servicios__content {
+  .presentacion .presentacion__content {
+    height: 90%;
     padding: 5px;
-    height: 100%;
+  }
+  .servicios .servicios__content {
+    padding: 5px;
+    height: 90%;
   }
   .descripcion {
     padding: 5px;
+    flex-direction: column;
   }
   .descripcion .descripcion__img {
-    width: 20%;
+    width: 70%;
   }
   .descripcion .descripcion__content {
-    width: 80%;
+    width: 100%;
+    text-align: center;
   }
-  .circulo-rosa {
-    width: 300px;
-    height: 300px;
+  .descripcion-clientes .circulo-rosa {
+    width: 280px;
+    height: 280px;
   }
-  .circulo-rosa .titulo {
-    font-size: 2em;
+  .descripcion-clientes .circulo-rosa .titulo {
+    font-size: 1.5em;
   }
   .clientes {
     grid-template-columns: 1fr 1fr;
